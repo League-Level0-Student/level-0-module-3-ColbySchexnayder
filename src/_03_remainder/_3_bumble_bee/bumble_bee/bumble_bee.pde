@@ -16,8 +16,18 @@ void draw() {
 Use remainder to make the colors alternate between yellow and black
 */
 
+  for (int i = 0; i < 100; i++){
+    if (i % 2 == 0){
+      fill(#F8FC12);
+    }
+    else{
+      fill(0, 0, 0); 
+    }
+    
+    ellipse(400 - i * 20, 400 - i * 20, 50, 50);
+  }
 
-
+  drawBeeFace(400, 400);
 /*
 Now put his head on using drawBeeFace(x,y)
 */
